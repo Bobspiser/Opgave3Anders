@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - Opgave3Anders</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Opgave3Anders.styles.css" asp-append-version="true" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Product example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="site-header sticky-top py-1">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+                <a style="color: #999;" class="py-2 active" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                </a>
+                <a style="color: #999; text-decoration:none" class="py-2 d-none d-md-inline-block" href="https://docs.google.com/document/d/e/2PACX-1vQnP5GDXd2YmuUapbnNgaUAK-4gsDtZGDl-qZT-g3xsUCSvPhfr1OTdo7esf_b3qm3ypfQSwMuz5Mab/pub">Programming</a>
+                <a style="color: #999; text-decoration:none" class="py-2 d-none d-md-inline-block" href="https://anbo-easj.dk/internship/index.html">Internship</a>
+                <a style="color: #999; text-decoration:none" class="py-2 d-none d-md-inline-block" href="https://anbo-easj.dk/mobile2019spring/index.html">Science</a>
+                <a style="color: #999; text-decoration:none" class="py-2 d-none d-md-inline-block" href="https://anbo-easj.dk/dissertation2019spring/">Dissertations</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="py-5">
+        <div class="foot">
+            <a href="https://msdn.microsoft.com/en-us/default.aspx">Microsoft Developer Network</a> | <a href="https://msdn.microsoft.com/en-us/library/default.aspx">MSDN Library: Intro. til programmeringssprog mv. </a><br />
+            <a href="https://anbo-easj.dk/bekendtgoerelser/">Bekendtg&oslash;relser</a> om datamatiker-uddannelsen, eksamen og lign. <a href="https://anbo-easj.dk/index.htm">index</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
